@@ -7,7 +7,7 @@ export const loginSchema = Yup.object().shape({
     .max(16)
     .required(),
   password: Yup.string()
-    .matches(/^[a-zA-Z]+(\s?[a-zA-z]+)*$/)
+  .matches(/^[a-zA-Z0-9_-]+(\s?[a-zA-Z0-9_-]+)*$/)
     .min(6)
     .max(16)
     .required(),
